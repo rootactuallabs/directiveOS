@@ -1,0 +1,75 @@
+name: 🧩 Feature Request
+description: Suggest a new feature or capability for DirectiveOS
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping shape DirectiveOS. Please provide detailed, structured feedback.
+
+  - type: input
+    id: title
+    attributes:
+      label: Feature Title
+      description: Clear, concise name for the feature.
+      placeholder: e.g. "Quick Capture Overlay for Tasks"
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Feature Summary
+      description: What does the feature do? What value does it provide to users?
+      placeholder: "This feature allows users to..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem it Solves
+      description: Describe the user problem or workflow limitation this feature addresses.
+      placeholder: "Currently, it's difficult to..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Proposed Behavior
+      description: Describe how the feature should work, ideally in context.
+      placeholder: "When clicking X, the system would Y..."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: category
+    attributes:
+      label: Feature Category
+      options:
+        - label: Journaling / Note Capture
+        - label: Task and Schedule Management
+        - label: Executive Load Reduction
+        - label: Workflow Automation
+        - label: Integration / API
+        - label: UI / UX Improvements
+        - label: Other
+
+  - type: checkboxes
+    id: audience
+    attributes:
+      label: Intended Access Tier
+      options:
+        - label: All users
+        - label: Power users
+        - label: Admins / System Integrators
+        - label: API / Self-hosted extensions
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Notes or Context
+      description: Links, visuals, references, or examples (if any).
+    validations:
+      required: false
